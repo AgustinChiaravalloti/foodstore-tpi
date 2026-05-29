@@ -67,6 +67,14 @@ npm run dev
 
 **Administrador:** dashboard con estadísticas, CRUD de categorías, CRUD de productos y gestión del estado de los pedidos.
 
+## Entrega
+
+**Video demostrativo:** [Ver video]https://drive.google.com/file/d/1FMNwGN8qXkJzXmPW19GsQxIjS_opCkYM/view?usp=sharing
+
+**Documentación PDF:** [Ver documento]https://github.com/AgustinChiaravalloti/foodstore-tpi/blob/main/foodstore-backend/TPI-%20Foodstore.pdf
+
+
+
 ## Autor
 
 Agustín Chiaravalloti
