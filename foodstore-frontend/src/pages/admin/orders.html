@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Food Store - Pedidos Admin</title>
+</head>
+<body class="bg-gray-100 min-h-screen flex">
+
+<aside class="w-56 bg-gray-800 text-white min-h-screen p-4">
+    <h2 class="text-lg font-bold text-orange-400 mb-6">Administracion</h2>
+    <nav class="space-y-2">
+        <a href="/src/pages/admin/dashboard.html" class="block py-2 px-3 rounded hover:bg-gray-700">Dashboard</a>
+        <a href="/src/pages/admin/categories.html" class="block py-2 px-3 rounded hover:bg-gray-700">Categorias</a>
+        <a href="/src/pages/admin/products.html" class="block py-2 px-3 rounded hover:bg-gray-700">Productos</a>
+        <a href="/src/pages/admin/orders.html" class="block py-2 px-3 rounded bg-gray-700">Pedidos</a>
+        <a href="/src/pages/store/home.html" class="block py-2 px-3 rounded hover:bg-gray-700 mt-4 text-sm">Ver Tienda</a>
+        <button id="logout" class="block w-full text-left py-2 px-3 rounded hover:bg-gray-700 text-red-300 text-sm">Cerrar Sesion</button>
+    </nav>
+</aside>
+
+<main class="flex-1 p-8">
+    <h1 class="text-2xl font-bold mb-6">Gestion de Pedidos</h1>
+    <div id="lista" class="space-y-4">
+        <p>Cargando...</p>
+    </div>
+</main>
+
+<script type="module" src="/src/pages/admin/orders.ts"></script>
+</body>
+</html>

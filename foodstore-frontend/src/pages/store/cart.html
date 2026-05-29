@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Food Store - Carrito</title>
+</head>
+<body class="bg-gray-100 min-h-screen">
+
+<nav class="bg-white shadow px-6 py-3 flex justify-between items-center">
+    <a href="/src/pages/store/home.html" class="text-xl font-bold text-orange-500">Food Store</a>
+    <div class="flex items-center gap-4">
+        <a href="/src/pages/client/orders.html" class="text-gray-700 hover:text-orange-500">Mis Pedidos</a>
+        <a href="/src/pages/store/home.html" class="text-gray-700 hover:text-orange-500">Seguir comprando</a>
+        <button id="logout" class="text-red-500 hover:underline text-sm">Cerrar Sesion</button>
+    </div>
+</nav>
+
+<main class="max-w-3xl mx-auto p-6">
+    <h1 class="text-2xl font-bold mb-4">Mi Carrito</h1>
+
+    <div id="items" class="space-y-3 mb-6">
+        <!-- se llena por JS -->
+    </div>
+
+    <div id="resumen" class="bg-white rounded-lg shadow p-4 hidden">
+        <div class="flex justify-between text-lg font-bold mb-4">
+            <span>Total:</span>
+            <span id="total" class="text-orange-500">$0</span>
+        </div>
+        <button id="checkout"
+                class="w-full bg-orange-500 text-white py-2 rounded font-medium hover:bg-orange-600 mb-2">
+            Proceder al Pago
+        </button>
+        <button id="vaciar"
+                class="w-full bg-gray-200 text-gray-700 py-2 rounded font-medium hover:bg-gray-300">
+            Vaciar Carrito
+        </button>
+    </div>
+
+    <p id="vacio" class="text-gray-500 hidden">
+        Tu carrito esta vacio.
+        <a href="/src/pages/store/home.html" class="text-orange-500 hover:underline">Ir a la tienda</a>
+    </p>
+</main>
+
+<!-- Modal de checkout -->
+<div id="modal" class="fixed inset-0 bg-black/50 hidden items-center justify-center">
+    <div class="bg-white rounded-lg p-6 w-full max-w-sm">
+        <h2 class="text-xl font-bold mb-4">Completar Pedido</h2>
+        <label class="block text-sm font-medium mb-1">Telefono (requerido)</label>
+        <input id="telefono" type="text" required
+               class="w-full border rounded px-3 py-2 mb-3" placeholder="Ej: 1122334455" />
+
+        <label class="block text-sm font-medium mb-1">Metodo de Pago</label>
+        <select id="formaPago" class="w-full border rounded px-3 py-2 mb-4">
+            <option value="EFECTIVO">Efectivo</option>
+            <option value="TARJETA">Tarjeta</option>
+            <option value="TRANSFERENCIA">Transferencia</option>
+        </select>
+
+        <p id="modal-error" class="text-red-500 text-sm mb-2 hidden"></p>
+
+        <button id="confirmar"
+                class="w-full bg-green-500 text-white py-2 rounded font-medium hover:bg-green-600 mb-2">
+            Confirmar Pedido
+        </button>
+        <button id="cancelar"
+                class="w-full bg-gray-200 text-gray-700 py-2 rounded font-medium">
+            Cancelar
+        </button>
+    </div>
+</div>
+
+<script type="module" src="/src/pages/store/cart.ts"></script>
+</body>
+</html>

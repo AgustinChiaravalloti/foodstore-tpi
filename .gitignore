@@ -1,0 +1,22 @@
+# Dependencias
+node_modules/
+
+# Build backend
+foodstore-backend/build/
+foodstore-backend/.gradle/
+foodstore-backend/bin/
+
+# Build frontend
+foodstore-frontend/dist/
+
+# Configuracion de IDE
+.idea/
+*.iml
+.vscode/
+
+# Logs y temporales
+*.log
+
+# Sistema operativo
+.DS_Store
+Thumbs.db

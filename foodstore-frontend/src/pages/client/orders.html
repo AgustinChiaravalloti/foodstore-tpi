@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Food Store - Mis Pedidos</title>
+</head>
+<body class="bg-gray-100 min-h-screen">
+
+<nav class="bg-white shadow px-6 py-3 flex justify-between items-center">
+    <a href="/src/pages/store/home.html" class="text-xl font-bold text-orange-500">Food Store</a>
+    <div class="flex items-center gap-4">
+        <a href="/src/pages/store/home.html" class="text-gray-700 hover:text-orange-500">Tienda</a>
+        <button id="logout" class="text-red-500 hover:underline text-sm">Cerrar Sesion</button>
+    </div>
+</nav>
+
+<main class="max-w-3xl mx-auto p-6">
+    <h1 class="text-2xl font-bold mb-4">Mis Pedidos</h1>
+    <div id="lista" class="space-y-4">
+        <p>Cargando...</p>
+    </div>
+</main>
+
+<script type="module" src="/src/pages/client/orders.ts"></script>
+</body>
+</html>

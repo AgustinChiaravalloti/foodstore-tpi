@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Food Store - Admin</title>
+</head>
+<body class="bg-gray-100 min-h-screen flex">
+
+<!-- Sidebar admin -->
+<aside class="w-56 bg-gray-800 text-white min-h-screen p-4">
+    <h2 class="text-lg font-bold text-orange-400 mb-6">Administracion</h2>
+    <nav class="space-y-2">
+        <a href="/src/pages/admin/dashboard.html" class="block py-2 px-3 rounded bg-gray-700">Dashboard</a>
+        <a href="/src/pages/admin/categories.html" class="block py-2 px-3 rounded hover:bg-gray-700">Categorias</a>
+        <a href="/src/pages/admin/products.html" class="block py-2 px-3 rounded hover:bg-gray-700">Productos</a>
+        <a href="/src/pages/admin/orders.html" class="block py-2 px-3 rounded hover:bg-gray-700">Pedidos</a>
+        <a href="/src/pages/store/home.html" class="block py-2 px-3 rounded hover:bg-gray-700 mt-4 text-sm">Ver Tienda</a>
+        <button id="logout" class="block w-full text-left py-2 px-3 rounded hover:bg-gray-700 text-red-300 text-sm">Cerrar Sesion</button>
+    </nav>
+</aside>
+
+<!-- Contenido -->
+<main class="flex-1 p-8">
+    <h1 class="text-2xl font-bold mb-6">Panel de Administracion</h1>
+
+    <div class="grid grid-cols-2 lg:grid-cols-4 gap-4 mb-8">
+        <div class="bg-white rounded-lg shadow p-5">
+            <p class="text-gray-500 text-sm">Categorias</p>
+            <p id="stat-categorias" class="text-3xl font-bold text-orange-500">-</p>
+        </div>
+        <div class="bg-white rounded-lg shadow p-5">
+            <p class="text-gray-500 text-sm">Productos</p>
+            <p id="stat-productos" class="text-3xl font-bold text-orange-500">-</p>
+        </div>
+        <div class="bg-white rounded-lg shadow p-5">
+            <p class="text-gray-500 text-sm">Pedidos</p>
+            <p id="stat-pedidos" class="text-3xl font-bold text-orange-500">-</p>
+        </div>
+        <div class="bg-white rounded-lg shadow p-5">
+            <p class="text-gray-500 text-sm">Productos disponibles</p>
+            <p id="stat-disponibles" class="text-3xl font-bold text-green-500">-</p>
+        </div>
+    </div>
+</main>
+
+<script type="module" src="/src/pages/admin/dashboard.ts"></script>
+</body>
+</html>

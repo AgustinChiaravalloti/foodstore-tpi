@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Food Store - Detalle</title>
+</head>
+<body class="bg-gray-100 min-h-screen">
+
+<nav class="bg-white shadow px-6 py-3 flex justify-between items-center">
+    <a href="/src/pages/store/home.html" class="text-xl font-bold text-orange-500">Food Store</a>
+    <div class="flex items-center gap-4">
+        <a href="/src/pages/client/orders.html" class="text-gray-700 hover:text-orange-500">Mis Pedidos</a>
+        <a href="/src/pages/store/cart.html" class="text-gray-700 hover:text-orange-500">
+            Carrito (<span id="cart-count">0</span>)
+        </a>
+        <button id="logout" class="text-red-500 hover:underline text-sm">Cerrar Sesion</button>
+    </div>
+</nav>
+
+<main class="max-w-4xl mx-auto p-6">
+    <div id="detalle" class="bg-white rounded-lg shadow p-6 flex flex-col md:flex-row gap-6">
+        <!-- se llena por JS -->
+        <p>Cargando...</p>
+    </div>
+    <a href="/src/pages/store/home.html"
+       class="inline-block mt-4 text-orange-500 hover:underline">← Volver</a>
+</main>
+
+<script type="module" src="/src/pages/store/detail.ts"></script>
+</body>
+</html>
