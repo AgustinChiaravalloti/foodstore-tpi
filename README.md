@@ -73,7 +73,7 @@ npm run dev
 
 **Documentación PDF:** [Ver documento]https://github.com/AgustinChiaravalloti/foodstore-tpi/blob/main/foodstore-backend/TPI-%20Foodstore.pdf
 
-
+**Repositorio:** [Ver en GitHub](https://github.com/AgustinChiaravalloti/foodstore-tpi)
 
 ## Autor
 
